@@ -6,7 +6,7 @@
 ###
 
 # Este es un ejemplo básico de cómo imprimir un texto en consola
-print("¡Hola, Mundo!")
+# print("¡Hola, Mundo!")
 
 # También puedes usar comillas simples para imprimir texto
 # print('Esto también funciona con una comilla')
@@ -23,7 +23,7 @@ print("¡Hola, Mundo!")
 
 # También se pueden imprimir números directamente
 # print(42)
-
+print(3+2)
 # Ejemplo de cómo imprimir el símbolo de pulgadas (")
 # Si usamos comillas dobles dentro de un string con comillas dobles, se produce un error:
 # print("Esto es una "pulgada"")  # ❌ Esto generaría un error de sintaxis
@@ -35,4 +35,4 @@ print("¡Hola, Mundo!")
 # print("Esto es una \"pulgada\" dentro de un string con comillas dobles")
 
 # # ✅ Solución 3: Usar triple comillas para definir el string
-print("""Esto es una "pulgada" dentro de un string con triple comillas""")
+# print("""Esto es una "pulgada" dentro de un string con triple comillas""")
