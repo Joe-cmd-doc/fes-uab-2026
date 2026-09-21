@@ -7,8 +7,10 @@
 ###
 
 import os
-os.system("cls") # Limpia la consola para una mejor visualización
-# Para Mac o Linux, usa os.system("clear")
+import subprocess
+
+clear_command = ["cmd", "/c", "cls"] if os.name == "nt" else ["clear"]
+subprocess.run(clear_command, check=False)  # Neteja la consola per facilitar la visualització
 
 print("Conversión de tipos")
 
