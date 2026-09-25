@@ -8,11 +8,12 @@ import os
 os.system("cls")
 
 # Para asignar una variable solo hace falta poner el nombre de la variable y asignarle un valor
-my_name = "marc"
+my_name = "marc esteve"
 print(my_name)  # Imprime el valor de la variable my_name myName MyName My_Name
 
 age = 32
 print(age)  # Imprime el valor de la variable age)
+print(type(age))  # Muestra el tipo de dato de la variable age (int)
 
 # Reasignar un nuevo valor a una variable existente
 age = 39
@@ -33,6 +34,7 @@ print(type(name))  # Ahora la variable tiene un número entero (int)
 # f-string (literal de cadena de formato)
 # desde la versión Python 3.6
 print(f"Hola {my_name}, tengo {age + 5} años")
+# print("Hola " + my_name + ", tengo " + str(age + 5) + " años")
 
 # No recomendada forma de asignar variables
 name, age, city = "pepito", 32, "Madrid"

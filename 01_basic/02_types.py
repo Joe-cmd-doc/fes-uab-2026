@@ -4,11 +4,11 @@
 # int, float, complex, str, bool, NoneType, list, tuple, dict, range, set...
 ###
 
-# print("int:")  # Enters (números sense part decimal)
-# print(type(10))  # Nombre enter positiu
-# print(type(0))  # El número zero també és un enter
-# print(type(-5))  # Nombre enter negatiu
-# print(type(7238424723784278934789239874))  # Python permet nombres enters molt grans
+print("int:")  # Enters (números sense part decimal)
+print(type(10))  # Nombre enter positiu
+print(type(0))  # El número zero també és un enter
+print(type(-5))  # Nombre enter negatiu
+print(type(7238424723784278934789239874))  # Python permet nombres enters molt grans
 # print(7238424723784278934789239874)
 
 # print("float:")  # Nombres decimals (de coma flotant)

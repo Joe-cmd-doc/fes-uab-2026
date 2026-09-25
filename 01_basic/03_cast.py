@@ -12,7 +12,7 @@ import subprocess
 clear_command = ["cmd", "/c", "cls"] if os.name == "nt" else ["clear"]
 subprocess.run(clear_command, check=False)  # Neteja la consola per facilitar la visualització
 
-print("Conversión de tipos")
+print("Conversion de tipos")
 
 # Convertir una cadena que contiene un número a un entero y sumarlo con otro entero
 # print("100" + 2)  # Esto generaría un TypeError porque no se pueden sumar un entero con una cadena
@@ -38,7 +38,7 @@ print("Conversión de tipos")
 # print(bool("False"))  # Una cadena con texto, aunque sea "False", es True. Resultado: True
 
 # Redondear un número decimal
-print(round(2.51))  # Redondea 2.51 al entero más cercano. Resultado: 3
+# print(round(2.51))  # Redondea 2.51 al entero más cercano. Resultado: 3
 
 # Este genera un error y se comenta para evitar conflicto en la ejecución
-# print(int("Hola mundo"))  # ❌ Esto generaría un ValueError porque "Hola mundo" no es un número
+print(int("Hola mundo"))  # ❌ Esto generaría un ValueError porque "Hola mundo" no es un número
