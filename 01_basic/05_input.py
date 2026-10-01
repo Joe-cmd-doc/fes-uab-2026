@@ -3,8 +3,8 @@
 # La función input() permite obtener datos del usuario a través de la consola.
 ###
 
-import os
-os.system("cls")
+# import os
+# os.system("cls") #deprecated fer una actualització*
 
 # Para obtener datos del usuario se usa la función input()
 # La función input() recibe un mensaje que se muestra al usuario
