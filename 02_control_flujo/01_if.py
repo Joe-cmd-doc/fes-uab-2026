@@ -23,7 +23,7 @@ os.system("cls") # Windows
 # Si no se cumple la condición, no se ejecuta el bloque de código
 # edad = 15
 # if edad >= 18:
-#   print("Eres mayor de edad")
+#   print("Eres mayor de edad") 
 # print("¡Felicidades!")
 
 # Podemos usar el comando "else" para ejecutar un bloque de código
@@ -34,21 +34,26 @@ os.system("cls") # Windows
 #   print("Eres mayor de edad")
 # else:
 #   print("Eres menor de edad")
+  
+# if edad >= 18:
+#   print("Eres mayor de edad")
+# if edad < 18:
+#   print("Eres menor de edad")
 
-# print("\n Sentencia condicional con elif")
-# nota = 7
+print("\n Sentencia condicional con elif")
+nota = 7
 
 # Además de usar "if" y "else", podemos usar "elif" para determinar
 # múltiples condiciones, ten en cuenta que sólo se ejecutará el primer bloque
 # de código que cumpla la condición (o la del else, si está presente)
-# if nota >= 9:
-#   print("¡Sobresaliente!")
-# elif nota >= 7:
-#   print("Notable!")
-# elif nota >= 5:
-#   print("¡Aprobado!")
-# else:
-#   print("¡No está calificado!")
+if nota >= 9:
+  print("¡Sobresaliente!")
+elif nota >= 7:
+  print("Notable!")
+elif nota >= 5:
+  print("¡Aprobado!")
+else:
+  print("¡No está calificado!")
 
 # print("\n Condiciones múltiples")
 # edad = 16
