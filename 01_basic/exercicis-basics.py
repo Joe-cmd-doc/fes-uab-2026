@@ -14,7 +14,7 @@ print("\nExercici 2: Mostra els tipus de dades de les variables següents:")
 print("Utilitza la comanda 'type()' per determinar el tipus de dades de cada variable.")
 a = 15
 b = 3.14159
-c = "Hola mundo"
+c = "Hola món"
 d = True
 e = None
 

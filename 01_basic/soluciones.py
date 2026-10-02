@@ -1,127 +1,127 @@
 ###
 # soluciones.py
-# Soluciones a los ejercicios del archivo exercises.py
+# Solucions als exercicis del fitxer exercicis-basics.py
 ###
 
-print("\nEjercicio 1: Imprimir mensajes")
-print("Escribe un programa que imprima tu nombre y tu ciudad en líneas separadas.")
+print("\nExercici 1: Imprimir missatges")
+print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies separades.")
 
-# Solución:
-nombre = "Pedro"  # Reemplázalo con tu nombre
-ciudad = "Madrid"  # Reemplázalo con tu ciudad
+# Solució:
+nom = "Pere"  # Substitueix-lo pel teu nom
+ciutat = "Barcelona"  # Substitueix-la per la teva ciutat
 
-print(nombre)
-print(ciudad)
+print(nom)
+print(ciutat)
 
 print("--------------")
 
-print("\nEjercicio 2: Muestra los tipos de datos de las siguientes variables:")
-print("Usa el comando 'type()' para determinar el tipo de datos de cada variable.")
+print("\nExercici 2: Mostra els tipus de dades de les variables següents:")
+print("Fes servir la funció 'type()' per determinar el tipus de dada de cada variable.")
 
-# Variables dadas en el enunciado
+# Variables de l'enunciat
 a = 15
 b = 3.14159
 c = "Hola mundo"
 d = True
 e = None
 
-# Solución:
-print("Tipo de a:", type(a))
-print("Tipo de b:", type(b))
-print("Tipo de c:", type(c))
-print("Tipo de d:", type(d))
-print("Tipo de e:", type(e))
+# Solució:
+print("Tipus de a:", type(a))
+print("Tipus de b:", type(b))
+print("Tipus de c:", type(c))
+print("Tipus de d:", type(d))
+print("Tipus de e:", type(e))
 
 print("--------------")
 
-print("\nEjercicio 3: Casting de tipos")
-print("Convierte la cadena '12345' a un entero y luego a un float.")
-print("Convierte el float 3.99 a un entero. ¿Qué ocurre?")
+print("\nExercici 3: Conversió de tipus")
+print("Converteix la cadena '12345' a un enter i després a un nombre decimal.")
+print("Converteix el nombre decimal 3.99 a un enter. Què passa?")
 
-# Solución:
+# Solució:
 cadena = "12345"
-numero_entero = int(cadena)  # Convertir cadena a entero
-numero_float = float(numero_entero)  # Convertir entero a float
+nombre_enter = int(cadena)  # Converteix la cadena a enter
+nombre_decimal = float(nombre_enter)  # Converteix l'enter a nombre decimal
 
-print("Número entero:", numero_entero)
-print("Número como float:", numero_float)
+print("Nombre enter:", nombre_enter)
+print("Nombre decimal:", nombre_decimal)
 
-float_num = 3.99
-entero_convertido = int(float_num)  # Se trunca el decimal
+decimal_original = 3.99
+enter_convertit = int(decimal_original)  # Se n'elimina la part decimal
 
-print("Float original:", float_num)
-print("Float convertido a entero (se trunca la parte decimal):", entero_convertido)
+print("Nombre decimal original:", decimal_original)
+print("Nombre decimal convertit a enter (se n'elimina la part decimal):", enter_convertit)
 
 print("--------------")
 
-print("\nEjercicio 4: Variables")
-print("Crea variables para tu nombre, edad y altura.")
-print("Usa f-strings para imprimir una presentación.")
+print("\nExercici 4: Variables")
+print("Crea variables per al teu nom, edat i alçada.")
+print("Fes servir f-strings per mostrar una presentació.")
 
-# Solución:
-nombre = "marc"
+# Solució:
+nom = "Marc"
 edad = 18
-altura = 1.90
+alcada = 1.90
 
-# Imprimir presentación con f-string
-print(f"Hola! Me llamo {nombre} y tengo {edad} años, mido {altura} metros")
-
-print("--------------")
-
-print("\nEjercicio 5: Números")
-print("1. Crea una variable con el número PI (sin asignar una variable)")
-print("2. Redondea el número con round()")
-print("3. Haz la división entera entre el número que te salió y el número 2")
-print("4. El resultado debería ser 1")
-
-# Solución:
-# Redondeamos directamente el valor de pi sin almacenarlo en una variable
-resultado = int(round(3.1416) / 2)
-print("Valor de PI (aproximado):", 3.1416)
-print("PI redondeado:", round(3.1416))
-print("División entera de PI redondeado entre 2:", resultado)
+# Mostra la presentació amb una f-string
+print(f"Hola! Em dic {nom}, tinc {edad} anys i faig {alcada} metres")
 
 print("--------------")
 
-print("\nEjercicio 6: Conversor de temperatura")
-print("Pide al usuario una temperatura en grados Celsius.")
-print("Convierte ese valor a Fahrenheit con la fórmula: F = (C * 9/5) + 32")
-print("Muestra ambos valores con un mensaje claro.")
+print("\nExercici 5: Nombres")
+print("1. Utilitza el valor aproximat de PI (3.1416) sense desar-lo en una variable")
+print("2. Arrodoneix el nombre amb round()")
+print("3. Divideix entre 2 el nombre obtingut")
+print("4. El resultat hauria de ser 1")
 
-# Solución:
-celsius = float(input("Introduce la temperatura en °C: "))
+# Solució:
+# Arrodonim directament el valor de pi sense desar-lo en una variable
+resultat = int(round(3.1416) / 2)
+print("Valor aproximat de PI:", 3.1416)
+print("PI arrodonit:", round(3.1416))
+print("Divisió de PI arrodonit entre 2:", resultat)
+
+print("--------------")
+
+print("\nExercici 6: Conversor de temperatura")
+print("Demana a l'usuari una temperatura en graus Celsius.")
+print("Converteix-la a Fahrenheit amb la fórmula: F = (C * 9/5) + 32")
+print("Mostra tots dos valors amb un missatge clar.")
+
+# Solució:
+celsius = float(input("Introdueix la temperatura en °C: "))
 fahrenheit = (celsius * 9 / 5) + 32
 
 print(f"{celsius} °C equivalen a {fahrenheit:.2f} °F")
 
 print("--------------")
 
-print("\nEjercicio 7: Calculadora de propina")
-print("Pide el total de una cuenta y el porcentaje de propina.")
-print("Calcula cuánto es la propina y el total final a pagar.")
-print("Muestra los resultados con 2 decimales.")
+print("\nExercici 7: Calculadora de propines")
+print("Demana l'import total d'un compte i el percentatge de propina.")
+print("Calcula l'import de la propina i el total que cal pagar.")
+print("Mostra els resultats amb 2 decimals.")
 
-# Solución:
-total_cuenta = float(input("Introduce el total de la cuenta: "))
-porcentaje_propina = float(input("Introduce el porcentaje de propina: "))
+# Solució:
+total_compte = float(input("Introdueix l'import total del compte: "))
+percentatge_propina = float(input("Introdueix el percentatge de propina: "))
 
-propina = total_cuenta * (porcentaje_propina / 100)
-total_final = total_cuenta + propina
+propina = total_compte * (percentatge_propina / 100)
+total_final = total_compte + propina
 
 print(f"Propina: {propina:.2f} €")
 print(f"Total a pagar: {total_final:.2f} €")
 
 print("--------------")
 
-print("\nEjercicio 8: Validador de contraseña simple")
-print("Pide una contraseña al usuario.")
-print("Comprueba si tiene al menos 8 caracteres.")
-print("Muestra 'Contraseña válida' o 'Contraseña no válida'.")
+print("\nExercici 8: Comprovador senzill de contrasenya")
+print("Demana una contrasenya a l'usuari.")
+print("Comprova si té almenys 8 caràcters.")
+print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
-# Solución:
-contrasena = input("Introduce una contraseña: ")
+# Solució:
+contrasenya = input("Introdueix una contrasenya: ")
 
-if len(contrasena) >= 8:
-	print("Contraseña válida")
+if len(contrasenya) >= 8:
+	print("Contrasenya vàlida")
 else:
-	print("Contraseña no válida")
+	print("Contrasenya no vàlida")

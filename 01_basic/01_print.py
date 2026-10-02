@@ -6,7 +6,7 @@
 ###
 
 # Aquest és un exemple bàsic de com imprimir un text a la consola
-# print("¡Hola, Mundo!")
+# print("Hola, món!")
 
 # També pots utilitzar cometes simples per imprimir text
 # print('Això també funciona amb una cometa')
