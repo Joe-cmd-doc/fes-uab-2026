@@ -1,28 +1,30 @@
 ###
-# 05 - Entrada de usuario (input()) - Versión simplificada
-# La función input() permite obtener datos del usuario a través de la consola.
+# 05 - Entrada de dades de l'usuari (input()) - versió simplificada
+# La funció input() permet obtenir dades de l'usuari a través de la consola.
 ###
 
-import os
-os.system("cls")
+# import os
+# os.system("cls") #deprecated fer una actualització*
 
-# Para obtener datos del usuario se usa la función input()
-# La función input() recibe un mensaje que se muestra al usuario
-# y devuelve el valor introducido por el usuario
-# nombre = input("Hola, ¿cómo te llamas?\n")
-# print(f"Hola {nombre}, encantado de conocerte")
+# Per obtenir dades de l'usuari, es fa servir la funció input()
+# La funció input() rep un missatge que es mostra a l'usuari
+# i retorna el valor que aquest introdueix
+# nom = input("Hola, com et dius?\n")
+# print(f"Hola {nom}, encantat de conèixer-te")
+# print("Hola " + nom + ", encantat de conèixer-te")
 
-# Ten en cuenta que la función input() devuelve un string
-# Así que si queremos obtener un número se debe convertir el string a un número
-age = input("¿Cuántos años tienes?\n")
+# Tingues en compte que la funció input() retorna una cadena de text
+# Per obtenir un nombre, cal convertir aquesta cadena a un tipus numèric
+# edat = input("Quants anys tens?\n")
 
-print(f"Tendrás {int(age)+3} años dentro de 3 años")  # Esto no funcionará como esperamos
-age = int(age)
-print(f"Tienes {age} años")
+# print(f"D'aquí a 3 anys tindràs {int(edat) + 3} anys")  # Això no funcionarà com esperem
+# edat = int(edat)
+# print(f"Tens {edat} anys")
 
-# La función input() también puede devolver múltiples valores
-# Para hacerlo, el usuario debe separar los valores con una coma
-# print("Obtener múltiples valores a la vez")
-# country, city = input("¿En qué país y ciudad vives?\n").split()
+# La funció input() també pot retornar diversos valors
+# Per fer-ho, l'usuari els ha de separar amb un espai
+print("Obtenir diversos valors alhora")
+pais, ciutat = input("A quin país i a quina ciutat vius?\n").split()
 
-# print(f"Vives en {country}, {city}")
+# print(f"Vius a {ciutat}, {pais}")
+print(f"Vius a {ciutat}, {pais}")

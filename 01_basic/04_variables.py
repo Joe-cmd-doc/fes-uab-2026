@@ -1,66 +1,65 @@
 ##
 # 04 - Variables
-# Las variables sirven para guardar datos en memoria.
-# Python es un lenguaje de tipado dinámico y de tipado fuerte.
+# Les variables serveixen per desar dades a la memòria.
+# Python és un llenguatge de tipatge dinàmic i fort.
 ###
 
 import os
 os.system("cls")
 
-# Para asignar una variable solo hace falta poner el nombre de la variable y asignarle un valor
-my_name = "marc esteve"
-print(my_name)  # Imprime el valor de la variable my_name myName MyName My_Name
+# Per assignar una variable, només cal escriure'n el nom i donar-li un valor
+nom_complet = "marc esteve"
+print(nom_complet)  # Mostra el valor de la variable nom_complet
 
-age = 32
-print(age)  # Imprime el valor de la variable age)
-print(type(age))  # Muestra el tipo de dato de la variable age (int)
+edat = 32
+print(edat)  # Mostra el valor de la variable edat
+print(type(edat))  # Mostra el tipus de dada de la variable edat (int)
 
-# Reasignar un nuevo valor a una variable existente
-age = 39
-print(age)  # Ahora la variable age tiene el valor 39
+# Assignar un valor nou a una variable existent
+edat = 39
+print(edat)  # Ara la variable edat té el valor 39
 
-# Tipado dinámico: el tipo de dato se determine en tiempo de ejecución
-# No es necesario declarar explícitamente el tipo de variable
-name = "marc"
-print(type(name))  # Muestra el tipo de dato de la variable name (str)
+# Tipatge dinàmic: el tipus de dada es determina durant l'execució
+# No cal declarar explícitament el tipus de la variable
+nom = "marc"
+print(type(nom))  # Mostra el tipus de dada de la variable nom (str)
 
-name = 32
-print(type(name))  # Ahora la variable tiene un número entero (int)
+nom = 32
+print(type(nom))  # Ara la variable conté un nombre enter (int)
 
-# Tipado fuerte: Python no realiza conversione de tipo automáticas
-# Esto generará un error porque no se puede sumar un número con una cadena
+# Tipatge fort: Python no converteix els tipus automàticament
+# Això genera un error perquè no es pot sumar un nombre i una cadena
 # print(10 + "2")  # ❌ TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
-# f-string (literal de cadena de formato)
-# desde la versión Python 3.6
-print(f"Hola {my_name}, tengo {age + 5} años")
-# print("Hola " + my_name + ", tengo " + str(age + 5) + " años")
+# f-string (cadena de text formatada), disponible des de Python 3.6
+print(f"Hola {nom_complet}, d'aquí a 5 anys tindré {edat + 5} anys")
+# print("Hola " + nom_complet + ", d'aquí a 5 anys tindré " + str(edat + 5) + " anys")
 
-# No recomendada forma de asignar variables
-name, age, city = "pepito", 32, "Madrid"
+# Forma no recomanada d'assignar variables
+nom, edat, ciutat = "pepito", 32, "Madrid"
 
-# Convenciones de nombres de variables
-mi_nombre_de_variable = "ok" # snake_case
-nombre = "ok"
+# Convencions per als noms de variables
+el_meu_nom_de_variable = "correcte"  # snake_case
+nom = "correcte"
 
-miNombreDeVariable = "no-recomendado" # camelCase
-MiNombreDeVariable = "no-recomendado" # PascalCase
-minombredevariable = "no-recomendado" # todojunto
+elMeuNomDeVariable = "no recomanat"  # camelCase
+ElMeuNomDeVariable = "no recomanat"  # PascalCase
+elmeunomdevariable = "no recomanat"  # tot junt
 
-mi_nombre_de_variable_123 = "ok"
+el_meu_nom_de_variable_123 = "correcte"
 
-MI_CONSTANTE = 3.14 # UPPER_CASE -> constantes
+LA_MEVA_CONSTANT = 3.14  # UPPER_CASE -> constants
 
-MI_CONSTANTE = 3 # Python no tiene constantes, pero se usa esta convención
+LA_MEVA_CONSTANT = 3  # Python no té constants, però se segueix aquesta convenció
 
 
-# Nombres NO válidos de variables (esto generaría errores)
-# 123123_variable = "ko"  # ❌ No puede comenzar con un número
-# mi-variable = "ko"  # ❌ No puede contener guiones (-), usa guion bajo (_)
-# mi variable = "ko"  # ❌ No puede contener espacios
-# True = False  # ❌ No puedes sobrescribir palabras reservadas
+# Noms de variables no vàlids (generarien errors)
+# 123123_variable = "incorrecte"  # ❌ No pot començar amb un nombre
+# el-meu-nom = "incorrecte"  # ❌ No pot contenir guions (-); fes servir guions baixos (_)
+# el meu nom = "incorrecte"  # ❌ No pot contenir espais
+# True = False  # ❌ No es poden sobreescriure les paraules reservades
 
-# Palabras reservadas en Python (no se pueden usar como nombres de variables)
+# Paraules reservades de Python (no es poden fer servir com a noms de variables)
 
 # ['False', 'None', 'True', 'and', 'as', 'assert',
 # 'async', 'await', 'break', 'class', 'continue',
@@ -69,12 +68,12 @@ MI_CONSTANTE = 3 # Python no tiene constantes, pero se usa esta convención
 # 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
 # 'return', 'try', 'while', 'with', 'yield']
 
-# Anotaciones de tipo (opcional, para mayor claridad en el código)
-is_user_logged_in: bool = True # Indica que la variable es un booleano
-print(is_user_logged_in)
+# Anotacions de tipus (opcionals, per fer el codi més clar)
+usuari_ha_iniciat_sessio: bool = True  # Indica que la variable és booleana
+print(usuari_ha_iniciat_sessio)
 
-# Activar "typecheck" en configuración de VSCode para ver advertencias de tipos
-# Ctrl + , para ir a "Settings" y buscar "typecheck"
+# Activa la comprovació de tipus a la configuració de VS Code per veure'n els avisos
+# Prem Ctrl + , i cerca "type checking" a la configuració
 
-name: str = "marc" # Indica que la variable es una cadena de texto
-print(name)
+nom: str = "marc"  # Indica que la variable és una cadena de text
+print(nom)

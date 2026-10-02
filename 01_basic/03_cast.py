@@ -1,9 +1,9 @@
 ###
-# 03 - casting de types
-# Este archivo de Python demuestra cómo realizar la conversión de tipos (casting) en Python.
-# La conversión de tipos es el proceso de convertir un valor de un tipo de dato a otro.
-# Esto es útil cuando se necesita realizar operaciones entre diferentes tipos de datos.
-# A continuación, se muestran ejemplos de cómo convertir entre tipos de datos como enteros, flotantes y cadenas.
+# 03 - conversió de tipus (casting)
+# Aquest fitxer de Python mostra com convertir tipus de dades (casting) en Python.
+# La conversió de tipus és el procés de convertir un valor d'un tipus de dada a un altre.
+# És útil quan cal fer operacions entre dades de tipus diferents.
+# A continuació es mostren exemples de conversió entre nombres enters, decimals i cadenes de text.
 ###
 
 import os
@@ -12,33 +12,33 @@ import subprocess
 clear_command = ["cmd", "/c", "cls"] if os.name == "nt" else ["clear"]
 subprocess.run(clear_command, check=False)  # Neteja la consola per facilitar la visualització
 
-print("Conversion de tipos")
+print("Conversió de tipus")
 
-# Convertir una cadena que contiene un número a un entero y sumarlo con otro entero
-# print("100" + 2)  # Esto generaría un TypeError porque no se pueden sumar un entero con una cadena
-# print(2 + int("100"))  # Convierte "100" a entero y suma 2. Resultado: 102
+# Convertir una cadena que conté un nombre a un enter i sumar-lo a un altre enter
+# print("100" + 2)  # Això generaria un TypeError perquè no es pot sumar un enter i una cadena
+# print(2 + int("100"))  # Converteix "100" a enter i hi suma 2. Resultat: 102
 
-# Convertir un entero a cadena para concatenarlo con otra cadena
-# print("100" + str(2))  # Convierte el número 2 a cadena y lo concatena. Resultado: "1002"
+# Convertir un enter a cadena per concatenar-lo amb una altra cadena
+# print("100" + str(2))  # Converteix el nombre 2 a cadena i el concatena. Resultat: "1002"
 
-# Convertir una cadena con un número decimal a tipo float
-# print(type(float("3.1416")))  # Convierte "3.1416" a float y muestra su tipo. Resultado: <class 'float'>
+# Convertir una cadena amb un nombre decimal al tipus float
+# print(type(float("3.1416")))  # Converteix "3.1416" a float i en mostra el tipus. Resultat: <class 'float'>
 
-# Convertir un número decimal a entero (se trunca la parte decimal)
-# print(int(3.1416))  # Convierte 3.1416 a 3 eliminando la parte decimal. Resultado: 3
+# Convertir un nombre decimal a enter (s'elimina la part decimal)
+# print(int(3.1416))  # Converteix 3.1416 en 3 eliminant-ne la part decimal. Resultat: 3
 
-# Evaluar valores numéricos como booleanos
-# print(bool(3))  # Cualquier número distinto de 0 es True. Resultado: True
-# print(bool(0))  # 0 es False. Resultado: False
-# print(bool(-1))  # Números negativos también son True. Resultado: True
+# Avaluar valors numèrics com a booleans
+# print(bool(3))  # Qualsevol nombre diferent de 0 és True. Resultat: True
+# print(bool(0))  # 0 és False. Resultat: False
+# print(bool(-1))  # Els nombres negatius també són True. Resultat: True
 
-# Evaluar cadenas como booleanos
-# print(bool(""))  # Una cadena vacía es False. Resultado: False
-# print(bool(" "))  # Una cadena con espacios es True. Resultado: True
-# print(bool("False"))  # Una cadena con texto, aunque sea "False", es True. Resultado: True
+# Avaluar cadenes com a booleans
+# print(bool(""))  # Una cadena buida és False. Resultat: False
+# print(bool(" "))  # Una cadena amb espais és True. Resultat: True
+# print(bool("False"))  # Una cadena amb text, encara que sigui "False", és True. Resultat: True
 
-# Redondear un número decimal
-# print(round(2.51))  # Redondea 2.51 al entero más cercano. Resultado: 3
+# Arrodonir un nombre decimal
+# print(round(2.51))  # Arrodoneix 2.51 a l'enter més proper. Resultat: 3
 
-# Este genera un error y se comenta para evitar conflicto en la ejecución
-print(int("Hola mundo"))  # ❌ Esto generaría un ValueError porque "Hola mundo" no es un número
+# Aquesta instrucció genera un error i es deixa activa com a exemple
+print(int("Hola món"))  # ❌ Genera un ValueError perquè "Hola món" no és un nombre
