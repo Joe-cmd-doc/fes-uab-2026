@@ -152,16 +152,47 @@ es_fin_de_semana = False
 # Demana a l'usuari que introdueixi dos nombres i mostra un missatge
 # que indiqui quin és més gran o si són iguals.
 
+number1 = float(input("Quin és el primer nombre? "))
+number2 = float(input("Quin és el segon nombre? "))
+if number1 > number2:
+  print(f"El primer nombre {number1} és més gran que el segon nombre {number2}")
+elif number1 < number2:
+  print(f"El segon nombre {number2} és més gran que el primer nombre {number1}")
+else:
+  print("Els dos nombres són iguals")
 
 # Exercici 2: Calculadora senzilla
 # Demana a l'usuari dos nombres i una operació (+, -, *, /).
 # Fes l'operació i mostra'n el resultat (gestiona la divisió per zero).
+
+number1 = float(input("Quin és el primer nombre? "))
+number2 = float(input("Quin és el segon nombre? "))
+operation = input("Quina és l'operació? (+, -, *, /) ")
+if operation == "+":
+  print(f"El resultat de la suma és {number1 + number2}")
+elif operation == "-":
+  print(f"El resultat de la resta és {number1 - number2}")
+elif operation == "*":
+  print(f"El resultat de la multiplicació és {number1 * number2}")
+elif operation == "/":
+  if number2 == 0:
+    print("La divisió per zero no és possible")
+  else:
+    print(f"El resultat de la divisió és {number1 / number2}")
+else:
+  print("Operació no vàlida")
 
 # Exercici 3: Any de traspàs
 # Demana a l'usuari que introdueixi un any i determina si és de traspàs.
 # Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
 # però no per 400.
 
+year = int(input("Quin és l'any? "))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+  print("És de traspàs")
+else:
+  print("No és de traspàs")
+  
 # Exercici 4: Classificar edats
 # Demana a l'usuari que introdueixi una edat i classifica-la en:
 # - Nadó (0-2 anys)
@@ -169,3 +200,15 @@ es_fin_de_semana = False
 # - Adolescent (13-17 anys)
 # - Adult (18-64 anys)
 # - Persona gran (65 anys o més)
+
+age = int(input("Quina és la teva edat? "))
+if age >= 0 and age <= 2:
+  print("Nadó")
+elif age >= 3 and age <= 12:
+  print("Infant")
+elif age >= 13 and age <= 17:
+  print("Adolescent")
+elif age >= 18 and age <= 64:
+  print("Adult")
+else:
+  print("Persona gran")
