@@ -26,4 +26,4 @@
 print("Obtener múltiples valores a la vez")
 country, city = input("¿En qué país y ciudad vives?\n").split()
 
-print(f"Vives en {country}, de la ciutat {city}")
+# print(f"Vives en {country}, de la ciutat {city}")
