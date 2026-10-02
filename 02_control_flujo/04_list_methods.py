@@ -1,6 +1,6 @@
 ###
-# 04 - Listas Métodos
-# Los métodos más importantes para trabajar con listas
+# 04 - Mètodes de les llistes
+# Els mètodes més importants per treballar amb llistes
 ###
 
 import os
@@ -8,111 +8,112 @@ os.system("cls")
 
 lista1 = ['a', 'b', 'c', 'd']
 print(lista1)
-# Añadir o insertar elementos a la lista
+# Afegir o inserir elements a la llista
 # lista1[4]='e'
-lista1.append('e') # Añade un elemento al final
+lista1.append('e') # Afegeix un element al final.
 print(lista1)
 
-lista1.insert(1, '@') # Inserta un elemento en la posición que le indiquemos como primer argumento
+lista1.insert(1, '@') # Insereix un element a la posició indicada pel primer argument.
 print(lista1)
 
-lista1.extend(['😃', '😍']) # Agrega elementos al final de la lista
+lista1.extend(['😃', '😍']) # Afegeix elements al final de la llista.
 print(lista1)
 
-# Eliminar elementos de la lista
-lista1.remove('@') # Eliminar la primera aparición de la cadena de texto @
+# Eliminar elements de la llista
+lista1.remove('@') # Elimina la primera aparició del caràcter @.
 print(lista1)
 
-ultimo = lista1.pop() # Eliminar el último elemento de la lista y además te lo devuelve
-# lista1.pop(-1) # También se puede hacer así
+ultimo = lista1.pop() # Elimina l'últim element de la llista i també el retorna.
+# lista1.pop(-1) # També es pot fer així.
 print(ultimo)
 print(lista1)
 
-letrab = lista1.pop(1) # Eliminar el segundo elemento de la lista (es el índice 1)
+letrab = lista1.pop(1) # Elimina el segon element de la llista (índex 1).
 print(letrab)
 print(lista1)
 
-# Eliminar por lo bestia
+# Eliminar directament amb del
 del lista1[-1]
 print(lista1)
 
-lista1.clear() # Eliminar todos los elementos de la lista
+lista1.clear() # Elimina tots els elements de la llista.
 print(lista1)
 
-# Eliminar un rango de elementos
+# Eliminar un interval d'elements
 lista1 = ['🐼', '🐨', '🐶', '😿', '🐹']
 del lista1[1:3]
 print(lista1)
 
-# Más métodos útiles
-print('Ordenar listas modificando la original')
+# Més mètodes útils
+print("Ordenar llistes modificant l'original")
 numbers = [3, 10, 2, 8, 99, 101]
 numbers.sort()
 print(numbers)
 
-print('Ordenar listas creando una nueva lista')
+print('Ordenar llistes creant-ne una de nova')
 numbers = [3, 10, 2, 8, 99, 101]
 sorted_numbers = sorted(numbers)
 print(numbers)
 print(sorted_numbers)
 
-print("Ordenar una lista de cadenas de texto (todo minúscula)")
-frutas = ['manzana', 'pera', 'limón', 'manzana', 'pera', 'limón']
+print("Ordenar una llista de cadenes de text (tot en minúscula)")
+frutas = ['poma', 'pera', 'llimona', 'poma', 'pera', 'llimona']
 sorted_frutas = sorted(frutas)
 print(sorted_frutas)
 
-print("Ordenar una lista de cadenas de texto (mezclas mayúscula y minúscula)")
-frutas = ['manzana', 'Pera', 'Limón', 'manzana', 'pera', 'limón']
+print("Ordenar una llista de cadenes de text (majúscules i minúscules barrejades)")
+frutas = ['poma', 'Pera', 'Llimona', 'poma', 'pera', 'llimona']
 frutas.sort(key=str.lower)
-# Case sensitive
+# Distingeix entre majúscules i minúscules.
 print(frutas)
 
-# Más cositas útiles
+# Més coses útils
 animals = ['🐶', '🐼', '🐨', '🐶']
-print(len(animals)) # Tamaño de la listas -> 4
-print(animals.count('🐶')) # Cuantas veces aparece el elemento '🐶' -> 2
-print('🐼' in animals) # Comprueba si hay un '🐼' en la lista -> True
+print(len(animals)) # Mida de la llista -> 4
+print(animals.count('🐶')) # Quantes vegades apareix '🐶' -> 2
+print('🐼' in animals) # Comprova si hi ha un '🐼' a la llista -> True
 print('🐹' in animals) # -> False
 
 ###
-# EJERCICOS
-# Usa siempre que puedas los métodos que has aprendido
+# EXERCICIS
+# Fes servir, sempre que puguis, els mètodes que has après.
 ###
 
-# Ejercicio 1: Añadir y modificar elementos
-# Crea una lista con los números del 1 al 5.
-# Añade el número 6 al final usando append().
-# Inserta el número 10 en la posición 2 usando insert().
-# Modifica el primer elemento de la lista para que sea 0.
+# Exercici 1: Afegir i modificar elements
+# Crea una llista amb els nombres de l'1 al 5.
+# Afegeix-hi el nombre 6 al final fent servir append().
+# Insereix-hi el nombre 10 a la posició 2 fent servir insert().
+# Modifica el primer element de la llista perquè sigui 0.
 
-# Ejercicio 2: Combinar y limpiar listas
-# Crea dos listas:
+# Exercici 2: Combinar i buidar llistes
+# Crea dues llistes:
 # lista_a = [1, 2, 3]
 # lista_b = [4, 5, 6, 1, 2]
-# Extiende lista_a con lista_b usando extend().
-# Elimina la primera aparición del número 1 en lista_a usando remove().
-# Elimina el elemento en el índice 3 de lista_a usando pop(). Imprime el elemento eliminado.
-# Limpia completamente lista_b usando clear().
+# Amplia lista_a amb lista_b fent servir extend().
+# Elimina la primera aparició del nombre 1 de lista_a fent servir remove().
+# Elimina l'element de l'índex 3 de lista_a fent servir pop(). Imprimeix l'element eliminat.
+# Buida completament lista_b fent servir clear().
 
-# Ejercicio 3: Slicing y eliminación con del
-# Crea una lista con los números del 1 al 10.
-# Utiliza slicing y del para eliminar los elementos desde el índice 2 hasta el 5 (sin incluir el 5).
-# Imprime la lista resultante.
+# Exercici 3: Slicing i eliminació amb del
+# Crea una llista amb els nombres de l'1 al 10.
+# Fes servir slicing i del per eliminar els elements des de l'índex 2 fins al 5
+# (sense incloure el 5).
+# Imprimeix la llista resultant.
 
-# Ejercicio 4: Ordenar y contar
-# Crea una lista con los siguientes números: [5, 2, 8, 1, 9, 4, 2].
-# Ordena la lista de forma ascendente usando sort().
-# Cuenta cuántas veces aparece el número 2 en la lista usando count().
-# Comprueba si el número 7 está en la lista usando in.
+# Exercici 4: Ordenar i comptar
+# Crea una llista amb els nombres següents: [5, 2, 8, 1, 9, 4, 2].
+# Ordena la llista de manera ascendent fent servir sort().
+# Compta quantes vegades apareix el nombre 2 a la llista fent servir count().
+# Comprova si el nombre 7 és a la llista fent servir in.
 
-# Ejercicio 5: Copia vs. Referencia
-# Crea una lista llamada original con los números [1, 2, 3].
-# Crea una copia de la lista original llamada copia_1 usando slicing.
-# Crea otra copia llamada copia_2 usando copy().
-# Crea una referencia a la lista original llamada referencia.
-# Modifica el primer elemento de la lista referencia a 10.
-# Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
+# Exercici 5: Còpia i referència
+# Crea una llista anomenada original amb els nombres [1, 2, 3].
+# Crea'n una còpia anomenada copia_1 fent servir slicing.
+# Crea'n una altra còpia anomenada copia_2 fent servir copy().
+# Crea una referència a la llista original anomenada referencia.
+# Modifica a 10 el primer element de la llista referencia.
+# Imprimeix les quatre llistes (original, copia_1, copia_2 i referencia) i observa'n els canvis.
 
-# Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
-# Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
-# Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+# Exercici 6: Ordenar cadenes sense distingir entre majúscules i minúscules
+# Crea una llista amb les cadenes següents: ["Poma", "pera", "PLÀTAN", "taronja"].
+# Ordena la llista sense distingir entre majúscules i minúscules.

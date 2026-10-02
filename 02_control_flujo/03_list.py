@@ -1,23 +1,23 @@
 ###
-# 03 - Listas
-# Secuencias mutables de elementos.
-# Pueden contener elementos de diferentes tipos.
+# 03 - Llistes
+# Seqüències mutables d'elements.
+# Poden contenir elements de tipus diferents.
 ###
 
 import os
 os.system("cls")
 
-# Creación de listas
-# print("\nCrear listas")
-lista1 = [1, 2, 3, 4, 5] # lista de enteros
-lista2 = ["manzanas", "peras", "plátanos"] # lista de cadenas
-lista3 = [1, "hola", 3.14, True] # lista de tipos mixtos
+# Creació de llistes
+# print("\nCrear llistes")
+lista1 = [1, 2, 3, 4, 5] # llista d'enters
+lista2 = ["pomes", "peres", "plàtans"] # llista de cadenes
+lista3 = [1, "hola", 3.14, True] # llista de tipus diferents
 
 lista_vacia = []
-lista_de_listas = [[1, 2], ['calcetin', 4]]
+lista_de_listas = [[1, 2], ['mitjó', 4]]
 #       1   [0][0]    2 [0][1]
-# 'calcetin'[1][0]    4 [1][1]
-# print(lista_de_listas[1][0]) # calcetin
+# 'mitjó'[1][0]       4 [1][1]
+# print(lista_de_listas[1][0]) # mitjó
 matrix = [[1, 2], [2, 3], [4, 5]]
 
 # print(lista1)
@@ -27,84 +27,88 @@ matrix = [[1, 2], [2, 3], [4, 5]]
 # print(lista_de_listas)
 # print(matrix)
 
-# Acceso a elementos por índice
-# print("\nAcceso a elementos por índice")
-lista2 = ["manzanas", "peras", "plátanos", "fresas"]
-print(lista2[0])  # manzanas
-print(lista2[1])  # peras
-print(lista2[-1]) # fresas
-print(lista2[-2]) # plátanos
+# Accés als elements mitjançant l'índex
+# print("\nAccés als elements mitjançant l'índex")
+lista2 = ["pomes", "peres", "plàtans", "maduixes"]
+print(lista2[0])  # pomes
+print(lista2[1])  # peres
+print(lista2[-1]) # maduixes
+print(lista2[-2]) # plàtans
 
 # print(lista_de_listas[1][0])
 
-# Slicing (rebanado) de listas
+# Selecció de fragments d'una llista (slicing)
 lista1 = [1, 2, 3, 4, 5]
 # print(lista1[1:4]) # [2, 3, 4]
 # print(lista1[:3]) # [1, 2, 3]
 # print(lista1[3:]) # [4, 5]
-# print(lista1[:]) # [1, 2, 3, 4, 5] Copia de la lista
+# print(lista1[:]) # [1, 2, 3, 4, 5] Còpia de la llista
 
 
-# HAY MÁS MAGIA
+# ENCARA HI HA MÉS POSSIBILITATS
 lista1 = [1, 2, 3, 4, 5, 6, 7, 8]
-print(lista1[1:6:2]) # [2, 4, 6] # [inicio:fin:paso]
-print(lista1[::2]) # para devolver índices pares
-print(lista1[::-1]) # para devolver índices inversos
+print(lista1[1:6:2]) # [2, 4, 6] # [inici:final:pas]
+print(lista1[::2]) # retorna els elements dels índexs parells
+print(lista1[::-1]) # retorna els elements en ordre invers
 
-# Modificar una lista
+# Modificar una llista
 lista1[0] = 20
 print(lista1)
-# Cuidado si no existe el índice, por ejemplo:
+# Compte: si l'índex no existeix, per exemple:
 # lista1[10] = 100 # Error
-# porque python no permite añadir elementos a una lista por índice
+# Python no permet afegir elements a una llista mitjançant un índex.
 
-# Añadir elementos a una lista
+# Afegir elements a una llista
 lista1 = [1, 2, 3]
 
-# forma larga y menos eficiente
+# Forma llarga i menys eficient
 lista1 = lista1 + [4, 5, 6]
 print(lista1)
 
-# forma corta y más eficiente
+# Forma curta i més eficient
 lista1 += [7, 8, 9]
 print(lista1)
 
-# Recuperar longitud de una lista
-print("Longitud de la lista", len(lista1))
+# Consultar la longitud d'una llista
+print("Longitud de la llista", len(lista1))
 
-# En JavaScript, la longitud de un array se obtiene con .lenght
+# En JavaScript, la longitud d'un array s'obté amb .length.
 
 ###
-# EJERCICOS
+# EXERCICIS
 ###
 
-# Ejercicio 1: El mensaje secreto
-# Dada la siguiente lista:
-# mensaje = ["C", "o", "d", "i", "g", "o", " ", "s", "e", "c", "r", "e", "t", "o"]
-# Utilizando slicing y concatenación, crea una nueva lista que contenga solo el mensaje "secreto".
+# Exercici 1: El missatge secret
+# Donada la llista següent:
+# missatge = ["C", "o", "d", "i", " ", "s", "e", "c", "r", "e", "t"]
+# Fent servir slicing i concatenació, crea una llista nova que contingui només
+# el missatge "secret".
 
-# Ejercicio 2: Intercambio de posiciones
-# Dada la siguiente lista:
+# Exercici 2: Intercanvi de posicions
+# Donada la llista següent:
 # numeros = [10, 20, 30, 40, 50]
-# Intercambia la primera y la última posición utilizando solo asignación por índice.
+# Intercanvia la primera i l'última posició fent servir només l'assignació per índex.
 
-# Ejercicio 3: El sándwich de listas
-# Dadas las siguientes listas:
-# pan = ["pan arriba"]
-# ingredientes = ["jamón", "queso", "tomate"]
-# pan_abajo = ["pan abajo"]
-# Crea una lista llamada sandwich que contenga el pan de arriba, los ingredientes y el pan de abajo, en ese orden.
+# Exercici 3: L'entrepà de llistes
+# Donades les llistes següents:
+# pa_de_dalt = ["pa de dalt"]
+# ingredients = ["pernil", "formatge", "tomàquet"]
+# pa_de_sota = ["pa de sota"]
+# Crea una llista anomenada entrepa que contingui, en aquest ordre, el pa de dalt,
+# els ingredients i el pa de sota.
 
-# Ejercicio 4: Duplicando la lista
-# Dada una lista:
+# Exercici 4: Duplicar una llista
+# Donada una llista:
 # lista = [1, 2, 3]
-# Crea una nueva lista que contenga los elementos de la lista original duplicados.
-# Ejemplo: [1, 2, 3] -> [1, 2, 3, 1, 2, 3]
+# Crea una llista nova que contingui duplicats els elements de la llista original.
+# Exemple: [1, 2, 3] -> [1, 2, 3, 1, 2, 3]
 
-# Ejercicio 5: Extrayendo el centro
-# Dada una lista con un número impar de elementos, extrae el elemento que se encuentra en el centro de la lista utilizando slicing.
-# Ejemplo: lista = [10, 20, 30, 40, 50] -> El centro es 30
+# Exercici 5: Extreure l'element central
+# Donada una llista amb un nombre senar d'elements, extreu-ne l'element central
+# fent servir slicing.
+# Exemple: llista = [10, 20, 30, 40, 50] -> L'element central és 30
 
-# Ejercicio 6: Reversa parcial
-# Dada una lista, invierte solo la primera mitad de la lista (utilizando slicing y concatenación).
-# Ejemplo: lista = [1, 2, 3, 4, 5, 6] -> Resultado: [3, 2, 1, 4, 5, 6]
+# Exercici 6: Inversió parcial
+# Donada una llista, inverteix-ne només la primera meitat (fent servir slicing
+# i concatenació).
+# Exemple: llista = [1, 2, 3, 4, 5, 6] -> Resultat: [3, 2, 1, 4, 5, 6]

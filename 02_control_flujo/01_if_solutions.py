@@ -1,28 +1,28 @@
 ###
-# EJERCICOS
+# EXERCICIS
 ###
 
-# Ejercicio 1: Determinar el mayor de dos números
-# Pide al usuario que introduzca dos números y muestra un mensaje
-# indicando cuál es mayor o si son iguales
-print("\nEjercicio 1:")
-num1 = int(input("Introduce el primer número: "))
-num2 = int(input("Introduce el segundo número: "))
+# Exercici 1: Determinar el més gran de dos nombres
+# Demana a l'usuari que introdueixi dos nombres i mostra un missatge
+# que indiqui quin és més gran o si són iguals.
+print("\nExercici 1:")
+num1 = int(input("Introdueix el primer nombre: "))
+num2 = int(input("Introdueix el segon nombre: "))
 
 if num1 > num2:
-    print(f"{num1} es mayor que {num2}")
+    print(f"{num1} és més gran que {num2}")
 elif num2 > num1:
-    print(f"{num2} es mayor que {num1}")
+    print(f"{num2} és més gran que {num1}")
 else:
-    print("Los números son iguales")
+    print("Els nombres són iguals")
 
-# Ejercicio 2: Calculadora simple
-# Pide al usuario dos números y una operación (+, -, *, /)
-# Realiza la operación y muestra el resultado (maneja la división entre zero)
-print("\nEjercicio 2:")
-num1 = float(input("Introduce el primer número: "))
-num2 = float(input("Introduce el segundo número: "))
-operacion = input("Introduce la operación (+, -, *, /): ")
+# Exercici 2: Calculadora senzilla
+# Demana a l'usuari dos nombres i una operació (+, -, *, /).
+# Fes l'operació i mostra'n el resultat (gestiona la divisió per zero).
+print("\nExercici 2:")
+num1 = float(input("Introdueix el primer nombre: "))
+num2 = float(input("Introdueix el segon nombre: "))
+operacion = input("Introdueix l'operació (+, -, *, /): ")
 
 if operacion == "+":
     resultado = num1 + num2
@@ -32,45 +32,46 @@ elif operacion == "*":
     resultado = num1 * num2
 elif operacion == "/":
     if num2 == 0:
-        print("Error: No se puede dividir por cero.")
+        print("Error: no es pot dividir per zero.")
     else:
         resultado = num1 / num2
 else:
-    print("Operación no válida.")
+    print("Operació no vàlida.")
 
-if 'resultado' in locals(): #Comprueba si la variable resultado existe.
-    print(f"El resultado es: {resultado}")
+if 'resultado' in locals(): # Comprova si existeix la variable resultado.
+    print(f"El resultat és: {resultado}")
 
-# Ejercicio 3: Año bisiesto
-# Pide al usuario que introduzca un año y determina si es bisiesto.
-# Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
-print("\nEjercicio 3:")
-anio = int(input("Introduce un año: "))
+# Exercici 3: Any de traspàs
+# Demana a l'usuari que introdueixi un any i determina si és de traspàs.
+# Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
+# però no per 400.
+print("\nExercici 3:")
+anio = int(input("Introdueix un any: "))
 
 if (anio % 4 == 0 and anio % 100 != 0) or anio % 400 == 0:
-    print(f"{anio} es un año bisiesto.")
+    print(f"{anio} és un any de traspàs.")
 else:
-    print(f"{anio} no es un año bisiesto.")
+    print(f"{anio} no és un any de traspàs.")
 
-# Ejercicio 4: Categorizar edades
-# Pide al usuario que introduzca una edad y la clasifique en:
-# - Bebé (0-2 años)
-# - Niño (3-12 años)
-# - Adolescente (13-17 años)
-# - Adulto (18-64 años)
-# - Adulto mayor (65 años o más)
-print("\nEjercicio 4:")
-edad = int(input("Introduce una edad: "))
+# Exercici 4: Classificar edats
+# Demana a l'usuari que introdueixi una edat i classifica-la en:
+# - Nadó (0-2 anys)
+# - Infant (3-12 anys)
+# - Adolescent (13-17 anys)
+# - Adult (18-64 anys)
+# - Persona gran (65 anys o més)
+print("\nExercici 4:")
+edad = int(input("Introdueix una edat: "))
 
 if 0 <= edad <= 2:
-    print("Bebé")
+    print("Nadó")
 elif 3 <= edad <= 12:
-    print("Niño")
+    print("Infant")
 elif 13 <= edad <= 17:
     print("Adolescente")
 elif 18 <= edad <= 64:
-    print("Adulto")
+    print("Adult")
 elif edad >= 65:
-    print("Adulto mayor")
+    print("Persona gran")
 else:
-    print("Edad no válida.")
+    print("Edat no vàlida.")

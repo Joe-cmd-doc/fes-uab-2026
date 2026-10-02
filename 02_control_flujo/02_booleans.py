@@ -1,32 +1,32 @@
 ###
-# 02 - Booleanos
-# Valores lógicos: True (verdadero) y False (falso).
-# Fundamentales para el control de flujo y la lógica en programación.
+# 02 - Valors booleans
+# Valors lògics: True (cert) i False (fals).
+# Són fonamentals per al control del flux i la lògica en programació.
 ###
 
 import os
 os.system("cls") # Windows
 
-# Los booleanos representan valores de verdad: True o False.
-# print("\nValores booleanos básicos:")
+# Els booleans representen valors de veritat: True o False.
+# print("\nValors booleans bàsics:")
 # print(True)
 # print(False)
 
-# Operadores de comparación: devuelven un valor booleano.
-# print("\nOperadores de comparación:")
+# Els operadors de comparació retornen un valor booleà.
+# print("\nOperadors de comparació:")
 print("5 > 3:", 5 > 3)        # True
 # print("5 < 3:", 5 < 3)        # False
-# print("5 == 5:", 5 == 5)      # True (igualdad)
-# print("5 != 3:", 5 != 3)      # True (desigualdad)
-# print("5 >= 5:", 5 >= 5)      # True (mayor o igual que)
+# print("5 == 5:", 5 == 5)      # True (igualtat)
+# print("5 != 3:", 5 != 3)      # True (desigualtat)
+# print("5 >= 5:", 5 >= 5)      # True (major o igual que)
 # print("5 <= 3:", 5 <= 3)      # False (menor o igual que)
 
-# print("\nComparación de cadenas:")
-print("'manzana' < 'pera':", "manzana" < "pera") # True
+# print("\nComparació de cadenes:")
+print("'poma' < 'pera':", "poma" < "pera") # True
 print("'Hola' == 'hola'", "Hola" == "hola") # False
 
-# Operadores lógicos: and, or, not
-print("\nOperadores lógicos:")
+# Operadors lògics: and, or, not
+print("\nOperadors lògics:")
 print("True and True:", True and True)   # True
 print("True and False:", True and False)  # False
 print("True or False:", True or False)    # True
@@ -34,8 +34,8 @@ print("False or False:", False or False)  # False
 print("not True:", not True)             # False
 print("not False:", not False)            # True
 
-# Tablas de verdad (para referencia):
-print("\nTablas de verdad:")
+# Taules de veritat (com a referència):
+print("\nTaules de veritat:")
 print("\nand:")
 print("A     B     A and B")
 print("True  True ", True and True)
