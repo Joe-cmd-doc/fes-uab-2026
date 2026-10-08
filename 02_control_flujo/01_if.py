@@ -40,24 +40,24 @@ os.system("cls") # Windows
 # if edad < 18:
 #   print("Ets menor d'edat")
 
-print("\n Sentència condicional amb elif")
-nota = 7
+# print("\n Sentència condicional amb elif")
+# nota = 7
 
 # A més de fer servir "if" i "else", podem fer servir "elif" per comprovar
 # diverses condicions. Tingues en compte que només s'executarà el primer bloc
 # de codi que compleixi la condició (o el de l'else, si n'hi ha).
-if nota >= 9:
-  print("Excel·lent!")
-elif nota >= 7:
-  print("Notable!")
-elif nota >= 5:
-  print("Aprovat!")
-else:
-  print("No ha aprovat!")
+# if nota >= 9:
+#   print("Excel·lent!")
+# elif nota >= 7:
+#   print("Notable!")
+# elif nota >= 5:
+#   print("Aprovat!")
+# else:
+#   print("No ha aprovat!")
 
-# print("\n Condicions múltiples")
-# edad = 16
-# tiene_carnet = True
+print("\n Condicions múltiples")
+edad = 16
+tiene_carnet = True
 
 # Els operadors lògics de Python són:
 # and: True si tots dos operands són certs.
@@ -66,12 +66,15 @@ else:
 # && equival a and
 # || equival a or
 
+# edad = 16
+# tiene_carnet = True
+
 # Si ets major d'edat i tens carnet...
 # podràs conduir.
-# if edad >= 18 and tiene_carnet:
-#   print("Pots conduir 🚗")
-# else:
-#   print("POLICIA 🚔!!!1!!!")
+if edad >= 18 and tiene_carnet:
+  print("Pots conduir 🚗")
+else:
+  print("POLICIA 🚔!!!1!!!")
 
 # En un poble de l'illa Margarita són més permissius i
 # et deixen conduir si ets major d'edat O tens carnet.
@@ -87,10 +90,10 @@ es_fin_de_semana = False
 # if not es_fin_de_semana:
   # print("Marc, va, que hem de fer classe!")
 
-# Podem niar condicionals, l'un dins de l'altre,
+# Podem anidar condicionals, l'un dins de l'altre,
 # per comprovar diverses condicions, tot i que
 # intentarem evitar-ho per simplificar el codi.
-# print("\n Condicionals niats")
+# print("\n Condicionals anidats")
 # edad = 20
 # tiene_dinero = False
 
@@ -102,6 +105,8 @@ es_fin_de_semana = False
 # else:
 #   print("No pots entrar a la discoteca")
 
+# edad = 20
+# tiene_dinero = False
 # Una manera més senzilla seria:
 # if edad < 18:
 #   print("No pots entrar a la discoteca")
@@ -118,31 +123,31 @@ es_fin_de_semana = False
 #   print("El nombre no és zero")
 
 # En canvi, el nombre 0 s'avalua com a False.
-# numero = 0
-# if numero: # False
-#   print("Aquí no s'entrarà mai")
-# print("Aquí sí que s'executa i continua fins al final del codi")
+numero = 0
+if numero: # False
+  print("Aquí no s'entrarà mai")
+print("Aquí sí que s'executa i continua fins al final del codi")
 
 # El valor buit "" també s'avalua com a False.
-# nombre = ""
-# if nombre:
-#   print("El nom no és buit")
+nombre = ""
+if nombre:
+  print("El nom no és buit")
 
 # Ves amb compte de no confondre l'assignació = amb la comparació ==!
 # numero = 3 # assignació
 # es_el_tres = numero == 3 # comparació: True
 
-# if es_el_tres:
-#   print("El nombre és 3")
+if es_el_tres:
+  print("El nombre és 3")
 
 # De vegades podem escriure condicionals en una sola línia amb
 # expressions condicionals, una forma concisa d'escriure un if-else.
 # print("\nL'expressió condicional:")
 # [codi si es compleix la condició] if [condició] else [codi si no es compleix]
 # En JavaScript seria: [condició] ? [codi si es compleix] : [codi si no es compleix]
-# edad = 19
-# missatge = "És major d'edat" if edad >= 18 else "És menor d'edat"
-# print(missatge)
+edad = 197
+missatge = "És major d'edat" if edad >= 18 else "És menor d'edat"
+print(missatge)
 
 ###
 # EXERCICIS
