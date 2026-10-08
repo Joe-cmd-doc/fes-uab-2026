@@ -137,8 +137,8 @@ if nombre:
 # numero = 3 # assignació
 # es_el_tres = numero == 3 # comparació: True
 
-if es_el_tres:
-  print("El nombre és 3")
+# if es_el_tres:
+#   print("El nombre és 3")
 
 # De vegades podem escriure condicionals en una sola línia amb
 # expressions condicionals, una forma concisa d'escriure un if-else.
