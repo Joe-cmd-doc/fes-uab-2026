@@ -116,6 +116,10 @@ print(lista_b)
 # (sense incloure el 5).
 # Imprimeix la llista resultant.
 
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+del numbers[2:5]
+print(numbers)
+
 
 # Exercici 4: Ordenar i comptar
 # Crea una llista amb els nombres següents: [5, 2, 8, 1, 9, 4, 2].
