@@ -140,6 +140,23 @@ else :
 # està desactivat, perquè la contrasenya és incorrecta o perquè falla el codi;
 # si totes les comprovacions necessàries són correctes, permet l'accés.
 
+c_actiu=int(input("El compte es actiu? No(0), Si(1)"))
+c_contr=int(input("La contrasenya es correcta? No(0), Si(1)"))
+
+if (c_actiu and c_contr) == 1 :
+    c_codi=int(input("El codi de doble verificacio es correcte?? No(0), Si(1)"))
+    if c_codi==1:
+        print("Acces aprovat")
+
+elif c_actiu==0:
+    print("Acces denegat , el compte esta desactivat")
+elif c_contr == 0:
+    print("Acces denegat, la contraseña es incorrecte")
+else:
+    print("Acces denegat, error de codi")
+
+
+
 
 # Exercici 9: Diagnòstic d'un router
 # Demana si el router està encès, si l'indicador LOS del terminal òptic està
@@ -148,6 +165,27 @@ else :
 # de fibra (LOS encès), si cal contactar amb el proveïdor (Internet apagat) o
 # si la connexió funciona correctament. Considera els casos en aquest ordre.
 
+print("Diagnostica el router")
+router = int(input("El router esta ences? No(0), Si(1)"))
+los = int(input("El indicador LOS del terminal optic esta ences? No(0), Si(1)"))
+internet = int(input("El indicador d'Internet del router esta encens? No(0), Si(1)"))
+if router == 0:
+    print("Cal encender el router")
+elif router == 1:
+    if los == 0:
+        print("Cal revisar el cable de fibra")
+    elif los == 1:
+        if internet == 0:
+            print("Cal contactar con el proveedor")
+        elif internet == 1:
+            print("La conexion funciona correctamente")
+    else:
+        print("Error de indicador")
+else:
+    print("Error de router")
+
+
+
 # Exercici 10: Prioritat d'una incidència de xarxa
 # Demana si la incidència afecta un servei crític, el nombre d'usuaris afectats
 # i si hi ha una alternativa de connexió disponible. Rebutja un nombre negatiu
@@ -155,3 +193,18 @@ else :
 # alternativa, o si afecta almenys 50 usuaris i no hi ha alternativa; alta si
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
 
+print("Prioritat d'una incidència de xarxa")
+critic = int(input("La incidència afecta un servei crític? No(0), Si(1)"))
+usuaris = int(input("El nombre d'usuaris afectats: "))
+alternativa = int(input("Hi ha una alternativa de connexió disponible? No(0), Si(1)"))
+if critic == 0:
+    print("Prioritat baixa")
+elif critic == 1:
+    if usuaris >= 50 and alternativa == 0:
+        print("Prioritat critica")
+    elif usuaris >= 10 and alternativa == 1:
+        print("Prioritat alta")
+    else:
+        print("Prioritat baixa")
+else:
+    print("Error de incidència")
